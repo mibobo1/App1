@@ -17,9 +17,17 @@
                     AlwaysShowHeader="False"
                     SelectionFollowsFocus="Enabled"
                     ItemInvoked="nvSample_ItemInvoked">
+        <NavigationView.AutoSuggestBox>
+            <AutoSuggestBox x:Name="ASB" PlaceholderText="Search"
+                            QueryIcon="Find" TextChanged="ASB_TextChanged" 
+                            QuerySubmitted="ASB_QuerySubmitted"
+                            SuggestionChosen="ASB_SuggestionChosen"  />
+        </NavigationView.AutoSuggestBox>
         <NavigationView.MenuItems>
+            <NavigationViewItemHeader Content="XAML的树结构"/>
+            <NavigationViewItem  Icon="AllApps" Content="遍历可视化树" Tag="TraversingTreePage"  SelectsOnInvoked="True"/>
             <NavigationViewItemHeader Content="布局管理"/>
-            <NavigationViewItem  Icon="AllApps" Content="布局通用属性" Tag="LayoutGeneralPage"  SelectsOnInvoked="True"/>
+            <NavigationViewItem  Icon="AllApps" Content="布局通用属性" Tag="LayoutGeneralPage"  SelectsOnInvoked="False"/>
             <NavigationViewItem Icon="AllApps" Content="网格布局" Tag="GridLayoutPage"/>
             <NavigationViewItem Icon="AllApps" Content="堆放布局" Tag="StackLayoutPage"/>
             <NavigationViewItem Icon="AllApps" Content="绝对布局" Tag="AbsoluteLayoutPage"/>
@@ -27,9 +35,39 @@
             <NavigationViewItem Icon="AllApps" Content="适配布局" Tag="FitLayoutPage"/>
             <NavigationViewItem Icon="AllApps" Content="圆形布局" Tag="CircleLayoutPage"/>
             <NavigationViewItemSeparator/>
-            <NavigationViewItem Icon="Save" Content="Menu Item2" Tag="SamplePage2" />
-            <NavigationViewItem Icon="Refresh" Content="Menu Item3" Tag="SamplePage3" />
-            <NavigationViewItem Icon="Download" Content="Menu Item4" Tag="SamplePage4" />
+            <NavigationViewItem Icon="AllApps" Content="占位符" Tag="CircleLayoutPage"/>
+            <NavigationViewItem Icon="AllApps" Content="占位符" Tag="CircleLayoutPage"/>
+            <NavigationViewItem Icon="AllApps" Content="占位符" Tag="CircleLayoutPage"/>
+            <NavigationViewItem Icon="AllApps" Content="占位符" Tag="CircleLayoutPage"/>
+            <NavigationViewItem Icon="AllApps" Content="占位符" Tag="CircleLayoutPage"/>
+            <NavigationViewItem Icon="AllApps" Content="占位符" Tag="CircleLayoutPage"/>
+            <NavigationViewItem Icon="AllApps" Content="占位符" Tag="CircleLayoutPage"/>
+            <NavigationViewItem Icon="AllApps" Content="占位符" Tag="CircleLayoutPage"/>
+            <NavigationViewItem Icon="AllApps" Content="占位符" Tag="CircleLayoutPage"/>
+            <NavigationViewItem Icon="AllApps" Content="占位符" Tag="CircleLayoutPage"/>
+            <NavigationViewItem Icon="AllApps" Content="占位符" Tag="CircleLayoutPage"/>
+            <NavigationViewItem Icon="AllApps" Content="占位符" Tag="CircleLayoutPage"/>
+            <NavigationViewItem Icon="AllApps" Content="占位符" Tag="CircleLayoutPage"/>
+            <NavigationViewItem Icon="AllApps" Content="占位符" Tag="CircleLayoutPage"/>
+            <NavigationViewItem Icon="AllApps" Content="占位符" Tag="CircleLayoutPage"/>
+            <NavigationViewItem Icon="AllApps" Content="占位符" Tag="CircleLayoutPage"/>
+            <NavigationViewItem Icon="AllApps" Content="占位符" Tag="CircleLayoutPage"/>
+            <NavigationViewItem Icon="AllApps" Content="占位符" Tag="CircleLayoutPage"/>
+            <NavigationViewItem Icon="AllApps" Content="占位符" Tag="CircleLayoutPage"/>
+            <NavigationViewItem Icon="AllApps" Content="占位符" Tag="CircleLayoutPage"/>
+            <NavigationViewItem Icon="AllApps" Content="占位符" Tag="CircleLayoutPage"/>
+            <NavigationViewItem Icon="AllApps" Content="占位符" Tag="CircleLayoutPage"/>
+            <NavigationViewItem Icon="AllApps" Content="占位符" Tag="CircleLayoutPage"/>
+            <NavigationViewItem Icon="AllApps" Content="占位符" Tag="CircleLayoutPage"/>
+            <NavigationViewItem Icon="AllApps" Content="占位符" Tag="CircleLayoutPage"/>
+            <NavigationViewItem Icon="AllApps" Content="占位符" Tag="CircleLayoutPage"/>
+            <NavigationViewItem Icon="AllApps" Content="占位符" Tag="CircleLayoutPage"/>
+            <NavigationViewItem Icon="AllApps" Content="占位符" Tag="CircleLayoutPage"/>
+            <NavigationViewItem Icon="AllApps" Content="占位符" Tag="CircleLayoutPage"/>
+
+
+
+
         </NavigationView.MenuItems>
         <!--<NavigationView.AutoSuggestBox>
             <AutoSuggestBox x:Name="ASB" PlaceholderText="Search" QueryIcon="Find" TextChanged="AutoSuggestBox_TextChanged" QuerySubmitted="AutoSuggestBox_QuerySubmitted" SuggestionChosen="AutoSuggestBox_SuggestionChosen"/>

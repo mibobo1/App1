@@ -8,7 +8,24 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
-
+    <Grid  >
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Slider Grid.Row="0" Value="5" ValueChanged="Slider_ValueChanged"/>
+            <local:CirclePanel x:Name="circlePanel" Radius="50" Grid.Row="1"
+                               HorizontalAlignment="Center" VerticalAlignment="Center">
+                <TextBlock>Start here</TextBlock>
+                <TextBlock>TextBlock1</TextBlock>
+                <TextBlock>TextBlock2</TextBlock>
+                <TextBlock>TextBlock3</TextBlock>
+                <TextBlock>TextBlock4</TextBlock>
+                <TextBlock>TextBlock5</TextBlock>
+                <TextBlock>TextBlock6</TextBlock>
+                <TextBlock>TextBlock7</TextBlock>
+            </local:CirclePanel>
+        </Grid>
     </Grid>
 </Page>

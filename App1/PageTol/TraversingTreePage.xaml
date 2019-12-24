@@ -1,0 +1,19 @@
+﻿<Page
+    x:Class="App1.PageTol.TraversingTreePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App1.PageTol"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <StackPanel x:Name="stackPanel">
+                <TextBox></TextBox>
+                <Button Content="遍历" Click="Button_Click"   ></Button>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Page>

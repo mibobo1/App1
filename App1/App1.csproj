@@ -25,7 +25,7 @@
     <AppxBundle>Always</AppxBundle>
     <AppxBundlePlatforms>x86|x64|arm</AppxBundlePlatforms>
     <HoursBetweenUpdateChecks>0</HoursBetweenUpdateChecks>
-    <PackageCertificateThumbprint>2D8DA8B778CD84D64B2E1B4C3BA5AAB2B5C3B3D5</PackageCertificateThumbprint>
+    <PackageCertificateThumbprint>B496159BDFE2B35FB388D660405A1C92DC72DF5E</PackageCertificateThumbprint>
     <PackageCertificateKeyFile />
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
@@ -173,6 +173,9 @@
     <Compile Include="OverlayPage.xaml.cs">
       <DependentUpon>OverlayPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="PageTol\TraversingTreePage.xaml.cs">
+      <DependentUpon>TraversingTreePage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RelativeLayoutPage.xaml.cs">
       <DependentUpon>RelativeLayoutPage.xaml</DependentUpon>
@@ -272,6 +275,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="PageTol\TraversingTreePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="RelativeLayoutPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -309,6 +316,7 @@
   <ItemGroup>
     <None Include="App1_TemporaryKey.pfx" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>

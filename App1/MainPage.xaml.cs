@@ -22,6 +22,9 @@ namespace App1
     /// </summary>
     public sealed partial class MainPage : Page
     {
+
+        private List<string> ReminderStrList;
+
         public MainPage()
         {
             this.InitializeComponent();
@@ -44,6 +47,9 @@ namespace App1
                 //选中项的内容
                 switch (args.InvokedItem)
                 {
+                    case "遍历可视化树":
+                        ContentFrame.Navigate(typeof(PageTol.TraversingTreePage));
+                        break;
                     case "布局通用属性":
                         ContentFrame.Navigate(typeof(LayoutGeneralPage));
                         break;
@@ -67,6 +73,40 @@ namespace App1
                         break;
                 }
             }
+        }
+
+        private void ASB_TextChanged(AutoSuggestBox sender, AutoSuggestBoxTextChangedEventArgs args)
+        {
+            try
+            {
+                if (args.Reason == AutoSuggestionBoxTextChangeReason.UserInput)
+                {
+                    sender.ItemsSource = ReminderStrList.Where(i => i.Contains(sender.Text));
+                }
+            }
+            catch (Exception e)
+            {
+                e.ToString();
+            }
+
+        }
+
+        private void ASB_QuerySubmitted(AutoSuggestBox sender, AutoSuggestBoxQuerySubmittedEventArgs args)
+        {
+            string txt = args.QueryText;  //输入的文本
+            if (args.ChosenSuggestion != null)
+            {
+                //从提示框中选择某一项时触发
+            }
+            else
+            {
+                //用户在输入时敲回车或者点击右边按钮确认输入时触发
+            }
+        }
+
+        private void ASB_SuggestionChosen(AutoSuggestBox sender, AutoSuggestBoxSuggestionChosenEventArgs args)
+        {
+            sender.Text = args.SelectedItem.ToString();
         }
     }
 }

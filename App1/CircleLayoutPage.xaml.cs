@@ -26,5 +26,13 @@ namespace App1
         {
             this.InitializeComponent();
         }
+
+        private void Slider_ValueChanged(object sender, RangeBaseValueChangedEventArgs e)
+        {
+            if(circlePanel != null)
+            {
+                circlePanel.Radius = e.NewValue * 10;
+            }
+        }
     }
 }
