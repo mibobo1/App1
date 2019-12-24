@@ -1,0 +1,18 @@
+﻿<Page
+    x:Class="App1.StackLayoutPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid VerticalAlignment="Center" HorizontalAlignment="Center">
+        <StackPanel  Orientation="Horizontal">
+            <Button x:Name="VerticalLayout" Content="垂直布局" Click="VerticalLayout_Click"/>
+            <Button x:Name="HorizontalLayout" Content="水平布局" Click="HorizontalLayout_Click"/>
+            <Button x:Name="ShoppingList" Content="购物清单" Click="ShoppingList_Click"/>
+        </StackPanel>
+    </Grid>
+</Page>

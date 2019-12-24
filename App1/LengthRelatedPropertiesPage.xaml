@@ -1,0 +1,23 @@
+﻿<Page
+    x:Class="App1.LengthRelatedPropertiesPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center"
+                    Margin="10,20,30,40">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock x:Name="info" MaxWidth="150" Text="你好" FontSize="30"></TextBlock>
+                <TextBlock Text="你好" FontSize="30"></TextBlock>
+            </StackPanel>
+            <TextBox TextChanged="TextBox_TextChanged" Width="180"></TextBox>
+            <Button x:Name="backButton" HorizontalAlignment="Center" Click="backButton_Click" Style="{StaticResource NavigationBackButtonNormalStyle}" 
+                Grid.Row="2"/>
+        </StackPanel>
+    </Grid>
+</Page>

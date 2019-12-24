@@ -1,0 +1,48 @@
+﻿<Page
+    x:Class="App1.BlankPage1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Background="White">
+
+        <Button Content="X" Foreground="Black" FontSize="50" 
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                   BorderBrush="White" Padding="10"
+                BorderThickness="20" 
+                Width="120" />
+        <StackPanel Orientation="Vertical"  HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button Content="银行卡" Background="Blue" FontSize="30" Width="350" 
+                   BorderBrush="White" Padding="10" BorderThickness="10"/>
+            <Button Content="银联二维码" Background="Blue" FontSize="30" Width="350" 
+                   BorderBrush="White" Padding="10" BorderThickness="10"/>
+            <Button Content="微信" Background="Blue" FontSize="30" Width="350" 
+                   BorderBrush="White" Padding="10" BorderThickness="10"/>
+            <Button Content="支付宝" Background="Blue" FontSize="30" Width="350" 
+                   BorderBrush="White" Padding="10" BorderThickness="10"/>
+            <Button Content="一卡通" Background="Blue" FontSize="30" Width="350" 
+                   BorderBrush="White" Padding="10" BorderThickness="10"/>
+            <Button Content="礼遇卡" Background="Blue" FontSize="30" Width="350" 
+                   BorderBrush="White" Padding="10" BorderThickness="10"/>
+            <Button Content="鲁商电子卡" Background="Blue" FontSize="30" Width="350" 
+                   BorderBrush="White" Padding="10" BorderThickness="10"/>
+            <Button Content="银豆" Background="Blue" FontSize="30" Width="350" 
+                   BorderBrush="White" Padding="10" BorderThickness="10"/>
+            <Button Content="查询扫码" Background="Blue" FontSize="30" Width="350" 
+                   BorderBrush="White" Padding="10" BorderThickness="10"/>
+            <Button Content="权益核销" Background="Blue" FontSize="30" Width="350" 
+                   BorderBrush="White" Padding="10" BorderThickness="10"/>
+
+        </StackPanel>
+        <Button Content="签到" Background="Blue" FontSize="30" HorizontalAlignment="Right"
+                VerticalAlignment="Top"
+                   BorderBrush="White" Padding="10"
+                BorderThickness="20" 
+                Width="120" />
+    </Grid>
+</Page>
