@@ -34,13 +34,13 @@ namespace App1.PageTol
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private  async void Button_Click(object sender, RoutedEventArgs e)
         {
             visulTreeStr = "";
             GetChildType(stackPanel);
             MessageDialog messageDialog = new MessageDialog(visulTreeStr);
-            
-            async messageDialog.ShowAsync();
+
+            await messageDialog.ShowAsync();
         }
 
         public void GetChildType(DependencyObject reference)

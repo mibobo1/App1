@@ -24,8 +24,17 @@
                             SuggestionChosen="ASB_SuggestionChosen"  />
         </NavigationView.AutoSuggestBox>
         <NavigationView.MenuItems>
+            <NavigationViewItemHeader Content="控件"/>
+            <NavigationViewItem  Icon="AllApps" Content="按钮" Tag="ButtonPage"  SelectsOnInvoked="True"/>
+            <NavigationViewItem  Icon="AllApps" Content="文本块" Tag="ButtonPage"  SelectsOnInvoked="True"/>
+            <NavigationViewItem  Icon="AllApps" Content="文本框" Tag="ButtonPage"  SelectsOnInvoked="True"/>
+            <NavigationViewItem  Icon="AllApps" Content="边框" Tag="ButtonPage"  SelectsOnInvoked="True"/>
+            <NavigationViewItem  Icon="AllApps" Content="超链接" Tag="ButtonPage"  SelectsOnInvoked="True"/>
+
+            <NavigationViewItemSeparator/>
             <NavigationViewItemHeader Content="XAML的树结构"/>
             <NavigationViewItem  Icon="AllApps" Content="遍历可视化树" Tag="TraversingTreePage"  SelectsOnInvoked="True"/>
+            <NavigationViewItemSeparator/>
             <NavigationViewItemHeader Content="布局管理"/>
             <NavigationViewItem  Icon="AllApps" Content="布局通用属性" Tag="LayoutGeneralPage"  SelectsOnInvoked="False"/>
             <NavigationViewItem Icon="AllApps" Content="网格布局" Tag="GridLayoutPage"/>

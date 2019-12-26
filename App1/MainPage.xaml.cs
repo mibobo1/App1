@@ -47,6 +47,23 @@ namespace App1
                 //选中项的内容
                 switch (args.InvokedItem)
                 {
+                    case "按钮":
+                        ContentFrame.Navigate(typeof(ControlProgrammingPage.ButtonPage));
+                        break;
+                    case "文本块":
+                        ContentFrame.Navigate(typeof(ControlProgrammingPage.TextBlockPage));
+                        break;
+                    case "文本框":
+                        ContentFrame.Navigate(typeof(ControlProgrammingPage.TextBoxPage));
+                        break;
+                    case "边框":
+                        ContentFrame.Navigate(typeof(ControlProgrammingPage.BorderPage));
+                        break;
+                    case "超链接":
+                        ContentFrame.Navigate(typeof(ControlProgrammingPage.BorderPage));
+                        break;
+
+
                     case "遍历可视化树":
                         ContentFrame.Navigate(typeof(PageTol.TraversingTreePage));
                         break;

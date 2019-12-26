@@ -143,6 +143,21 @@
       <DependentUpon>CircleLayoutPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="CirclePanel.cs" />
+    <Compile Include="ControlProgrammingPage\BorderPage.xaml.cs">
+      <DependentUpon>BorderPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ControlProgrammingPage\ButtonPage.xaml.cs">
+      <DependentUpon>ButtonPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ControlProgrammingPage\HyperlinksButtonPage.xaml.cs">
+      <DependentUpon>HyperlinksButtonPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ControlProgrammingPage\TextBlockPage.xaml.cs">
+      <DependentUpon>TextBlockPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ControlProgrammingPage\TextBoxPage.xaml.cs">
+      <DependentUpon>TextBoxPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="DynamicLayoutPage.xaml.cs">
       <DependentUpon>DynamicLayoutPage.xaml</DependentUpon>
     </Compile>
@@ -232,6 +247,26 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="CircleLayoutPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ControlProgrammingPage\BorderPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ControlProgrammingPage\ButtonPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ControlProgrammingPage\HyperlinksButtonPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ControlProgrammingPage\TextBlockPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ControlProgrammingPage\TextBoxPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

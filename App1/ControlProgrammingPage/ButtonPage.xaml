@@ -1,0 +1,33 @@
+﻿<Page
+    x:Class="App1.ControlProgrammingPage.ButtonPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App1.ControlProgrammingPage"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <StackPanel>
+            <!-- 添加按钮单击事件 -->
+            <Button Content="按钮1" Height="80" Name="button1"
+                    VerticalAlignment="Top" Width="300" Click="button1_Click"/>
+            <!--设置按钮的样式-->
+            <Button Content="按钮2" FontSize="48" FontStyle="Italic" Foreground="Red"
+                    Background="Blue" BorderThickness="30" BorderBrush="Yellow"
+                    Padding="30"/>
+            <!-- 图片按钮-->
+            <Button Width="165">
+                <StackPanel>
+                    <Image Source="Assets/LockScreenLogo.scale-200.png" Stretch="None" Height="61" Width="94"/>
+                </StackPanel>
+            </Button>
+            <!-- symbol 图形按钮-->
+            <Button>
+                <SymbolIcon Symbol="Emoji"/>
+            </Button>
+        </StackPanel>
+
+    </Grid>
+</Page>
