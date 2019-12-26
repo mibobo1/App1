@@ -30,6 +30,9 @@
             <NavigationViewItem  Icon="AllApps" Content="文本框" Tag="ButtonPage"  SelectsOnInvoked="True"/>
             <NavigationViewItem  Icon="AllApps" Content="边框" Tag="ButtonPage"  SelectsOnInvoked="True"/>
             <NavigationViewItem  Icon="AllApps" Content="超链接" Tag="ButtonPage"  SelectsOnInvoked="True"/>
+            <NavigationViewItem  Icon="AllApps" Content="单选按钮" Tag="ButtonPage"  SelectsOnInvoked="True"/>
+            <NavigationViewItem  Icon="AllApps" Content="复选框" Tag="ButtonPage"  SelectsOnInvoked="True"/>
+            <NavigationViewItem  Icon="AllApps" Content="进度条" Tag="ButtonPage"  SelectsOnInvoked="True"/>
 
             <NavigationViewItemSeparator/>
             <NavigationViewItemHeader Content="XAML的树结构"/>

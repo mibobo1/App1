@@ -9,6 +9,13 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <StackPanel>
+            <HyperlinkButton  Content="超链接" Width="200" Background="Blue"
+                              Foreground="Orange" FontWeight="Bold" 
+                              Margin="0,0,0,30">
+            </HyperlinkButton>
+            <HyperlinkButton Content="baidu" NavigateUri="https://www.baidu.com"/>
+        </StackPanel>
 
     </Grid>
 </Page>

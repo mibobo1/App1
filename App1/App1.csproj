@@ -149,8 +149,17 @@
     <Compile Include="ControlProgrammingPage\ButtonPage.xaml.cs">
       <DependentUpon>ButtonPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ControlProgrammingPage\CheckBoxPage.xaml.cs">
+      <DependentUpon>CheckBoxPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ControlProgrammingPage\HyperlinksButtonPage.xaml.cs">
       <DependentUpon>HyperlinksButtonPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ControlProgrammingPage\ProgressBarPage.xaml.cs">
+      <DependentUpon>ProgressBarPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ControlProgrammingPage\RadioButtonPage.xaml.cs">
+      <DependentUpon>RadioButtonPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="ControlProgrammingPage\TextBlockPage.xaml.cs">
       <DependentUpon>TextBlockPage.xaml</DependentUpon>
@@ -258,7 +267,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="ControlProgrammingPage\CheckBoxPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ControlProgrammingPage\HyperlinksButtonPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ControlProgrammingPage\ProgressBarPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ControlProgrammingPage\RadioButtonPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

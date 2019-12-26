@@ -60,7 +60,13 @@ namespace App1
                         ContentFrame.Navigate(typeof(ControlProgrammingPage.BorderPage));
                         break;
                     case "超链接":
-                        ContentFrame.Navigate(typeof(ControlProgrammingPage.BorderPage));
+                        ContentFrame.Navigate(typeof(ControlProgrammingPage.HyperlinksButtonPage));
+                        break;
+                    case "单选按钮":
+                        ContentFrame.Navigate(typeof(ControlProgrammingPage.RadioButtonPage));
+                        break;
+                    case "复选框":
+                        ContentFrame.Navigate(typeof(ControlProgrammingPage.CheckBoxPage));
                         break;
 
 

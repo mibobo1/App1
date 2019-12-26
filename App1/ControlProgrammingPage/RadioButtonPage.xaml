@@ -1,0 +1,39 @@
+﻿<Page
+    x:Class="App1.ControlProgrammingPage.RadioButtonPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App1.ControlProgrammingPage"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <StackPanel>
+            <TextBlock FontSize="34" Height="75" Name="textBlock1"
+                       Text="选择一项：">
+            </TextBlock>
+            <RadioButton GroupName="MCSites" Background="Yellow"
+                         Foreground="Blue" Content="A xhxh" 
+                         Name="aa" Click="a_Click"/>
+            <RadioButton GroupName="MCSites" Background="Yellow"
+                         Foreground="Blue" Content="B xhxh" 
+                         Name="bb" Click="a_Click"/>
+            <RadioButton GroupName="MCSites" Background="Yellow"
+                         Foreground="Blue" Content="C xhxh" 
+                         Name="cc" Click="a_Click"/>
+            <RadioButton GroupName="MCSites" Background="Yellow"
+                         Foreground="Blue" Content="D xhxh" 
+                         Name="dd" Click="a_Click"/>
+            <RadioButton GroupName="MCSites" Background="Yellow"
+                         Foreground="Blue" Content="E xhxh" 
+                         Name="ee" Click="a_Click"/>
+            <RadioButton GroupName="MCSites" Background="Yellow"
+                         Foreground="Blue" Content="F xhxh" 
+                         Name="ff" Click="a_Click"/>
+            <TextBlock FontSize="34" Height="57" Name="textBlock2" Text=" 你的选择是："/>
+            <TextBlock FontSize="34" Height="57" Name="answer"/>
+        </StackPanel>
+
+    </Grid>
+</Page>
