@@ -68,6 +68,10 @@ namespace App1
                     case "复选框":
                         ContentFrame.Navigate(typeof(ControlProgrammingPage.CheckBoxPage));
                         break;
+                    case "进度条":
+                        ContentFrame.Navigate(typeof(ControlProgrammingPage.ProgressBarPage));
+                        break;
+
 
 
                     case "遍历可视化树":
