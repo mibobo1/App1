@@ -26,5 +26,35 @@ namespace BingWallpaper
         {
             this.InitializeComponent();
         }
+
+        private void today_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void yesterday_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void twodayago_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void threedayage_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void other_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void minus_bar_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
