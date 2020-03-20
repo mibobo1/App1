@@ -42,25 +42,36 @@
                 <HyperlinkButton Content="2天前壁纸" x:Name="twodayago" Click="twodayago_Click"></HyperlinkButton>
                 <HyperlinkButton Content="3天前壁纸" x:Name="threedayage" Click="threedayage_Click"></HyperlinkButton>
                 <HyperlinkButton Content="更早的壁纸" x:Name="other" Click="other_Click"></HyperlinkButton>
-                
+
             </StackPanel>
         </Grid>
         <!--自定义日期的面板-->
         <StackPanel x:Name="topStackPanel" Orientation="Vertical" Grid.RowSpan="2"
                     Background="{ThemeResource AppBarBackgroundThemeBrush}" Height="300"
                     VerticalAlignment="Top">
+
             <!--面板默认是在屏幕最上方顶上，用户刚开始并看不到-->
             <StackPanel.RenderTransform>
                 <TranslateTransform x:Name="topTransform" Y="-300"></TranslateTransform>
-                
             </StackPanel.RenderTransform>
-            <TextBlock Text="选择时间：" Margin="12 30 0 0" VerticalAlignment="Center"></TextBlock>        </StackPanel>
-        <StackPanel Orientation="Horizontal" Margin="12 30 0 0">
-            <!--使用两个AppBarButton来控制日期的增加和减少-->
-            <AppBarButton Icon="Remove" IsCompact="True" x:Name="minus_bar" Click="minus_bar_Click" 
-                          VerticalAlignment="Center"></AppBarButton>
+            <TextBlock Text="选择时间：" Margin="12 30 0 0" VerticalAlignment="Center"></TextBlock>
+
+
+            <StackPanel Orientation="Horizontal" Margin="12 30 0 0">
+
+                <!--使用两个AppBarButton来控制日期的增加和减少-->
+                <AppBarButton Icon="Remove" IsCompact="True" x:Name="minus_bar" Click="minus_bar_Click" 
+                                  VerticalAlignment="Center"></AppBarButton>
+                <TextBlock Text="4" x:Name="dayNumber" Margin="20 0 20 0" FontSize="20" 
+                               VerticalAlignment="Center"></TextBlock>
+                <AppBarButton Icon="Add" IsCompact="True" x:Name="plus_bar" Click="plus_bar_Click"
+                                  VerticalAlignment="Center"></AppBarButton>
+                <TextBlock Text="天前的壁纸" VerticalAlignment="Center" Margin="24 0 0 0"></TextBlock>
+
+            </StackPanel>
+            <!--通过按钮事件来触发跳转到壁纸详情列表页面-->
+            <Button Content="查看壁纸" x:Name="go" Click="go_Click" Margin="20 30 0 0"></Button>
         </StackPanel>
-   
 
     </Grid>
 </Page>
