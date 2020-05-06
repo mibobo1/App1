@@ -34,6 +34,7 @@
             <NavigationViewItem  Icon="AllApps" Content="复选框" Tag="ButtonPage"  SelectsOnInvoked="True"/>
             <NavigationViewItem  Icon="AllApps" Content="进度条" Tag="ButtonPage"  SelectsOnInvoked="True"/>
 
+            
             <NavigationViewItemSeparator/>
             <NavigationViewItemHeader Content="XAML的树结构"/>
             <NavigationViewItem  Icon="AllApps" Content="遍历可视化树" Tag="TraversingTreePage"  SelectsOnInvoked="True"/>
